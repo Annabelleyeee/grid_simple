@@ -1,83 +1,147 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-nav{
-  background-color: aliceblue;
+
+nav {
+  background-color: white;
   height: 70px;
   padding: 20px;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
   text-align: center;
+  padding: 10px;
+  color: slategrey
 }
-a{
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:cornsilk;
-    text-align: center;
-    padding: 10px ;
 
-}
-a:link{
+a:link {}
+
+a:visited {}
+
+a:hover {
   color: black;
-  color:deepskyblue;
+  background-color: lightgray;
+
+
 }
 
-a:visited{
-  color: black;
-  background-color:hotpink
+a:active {
+  color: #577599;
 }
 
-a:hover{
+h1 {
+  background-color: #577599;
   color: white;
-  background-color:mediumseagreen
-
-}
-
-a:active{
-  color: black;
-  color:mediumslateblue
-}
-
-h1{
-  border-color: hotpink;
-  border-style: solid;
-  border-width: 2px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-  text-align:left;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 30px;
-
-}
-p.intro{
-  text-align:left;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 30px;
-
+  font-family: 'Rubik', sans-serif;
+  padding: 15px;
+  font-size: 40px;
 }
 
-img.chrome { grid-area: c; }
-img.safari { grid-area: s; }
-img.internetexplorer { grid-area: i; }
-img.firefox { grid-area: f; }
+p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
 
-.icons{
-max-width: 80%;
+body.brbody {
+
+  background-image: url(https://webfoundation.org/docs/2019/09/Meaningful-Connectivity.jpg);
+
+ }
+
+.introduction {
+  max-width: 50%;
+  margin:0 auto;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  background-color: white;
+  padding: 30px;
+
+
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+
+img.chrome { grid-area: c;}
+
+img.safari {grid-area: s;}
+
+img.internetexplorer { grid-area: ie;}
+
+img.firefox { grid-area: f;}
+
+p.intro { grid-area: i;}
+
+h2.bh22 { grid-area: bh22}
+
+
+
+.grid-container-browsers {
+  max-width: 80%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
-    'c s i f'
-    ;
-  
-  grid-gap: 100px;
-  padding: 10px;
-  margin-left: 200px;
+  'bh22 bh22 bh22 bh22'
+    'c s ie f'
+    'h31 h32 h33 h34'
+    'p1 p2 p3 p4'
+  ;
+
+  grid-gap: 40px;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  justify-content: center;
 }
 
-img{
-    width: 100px;
+.grid-container-browsers p {
+  font-size: 15px;
 }
 
+img {
+  width: 100px;
+}
+
+body.wbody {
+  background-image: url(https://cryodragon.ca/wp-content/uploads/2018/03/CryoDragon-Internet-vs-World-Wide-Web.jpg)
+
+}
+.grid-container-www {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-areas: 
+  'h21 h21 h22 h22'
+  'wwwintro wwwintro wwwp1 wwwp1';
+  grid-gap: 40px;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  justify-content: center;
+}
+
+div.interintroduction {
+  max-width: 50%;
+  margin:0 auto;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  background-color: white;
+  padding: 30px;
+
+
+}
+body.interbody {
+  background-image: url(https://webfoundation.org/docs/2019/09/Meaningful-Connectivity.jpg);
+}
